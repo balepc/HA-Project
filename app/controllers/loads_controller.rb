@@ -20,4 +20,7 @@ class LoadsController < ApplicationController
     sleep 500
   end
 
+  def pulse
+  end
+  
 end
