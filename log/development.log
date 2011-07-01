@@ -25,3 +25,155 @@ Completed in 1016ms (View: 13, DB: 0) | 200 OK [http://localhost/loads/load1]
 Processing LoadsController#load5 (for 127.0.0.1 at 2011-07-01 13:11:54) [GET]
 Rendering loads/load5
 Completed in 5021ms (View: 11, DB: 0) | 200 OK [http://localhost/loads/load5]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-01 16:46:19) [GET]
+
+ActionController::RoutingError (No route matches "/sessions/set" with {:method=>:get}):
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-07-01 16:46:30) [GET]
+
+ActionController::RoutingError (No route matches "/sessions/get" with {:method=>:get}):
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#get (for 127.0.0.1 at 2011-07-01 16:46:49) [GET]
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/sessions/get]
+
+
+Processing SessionsController#set (for 127.0.0.1 at 2011-07-01 16:46:51) [GET]
+Completed in 54ms (View: 7, DB: 0) | 200 OK [http://localhost/sessions/set]
+
+
+Processing SessionsController#get (for 127.0.0.1 at 2011-07-01 16:46:55) [GET]
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/sessions/get]
+
+
+Processing SessionsController#get (for 127.0.0.1 at 2011-07-01 16:46:56) [GET]
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/sessions/get]
+
+
+Processing SessionsController#get (for 127.0.0.1 at 2011-07-01 16:46:57) [GET]
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/sessions/get]
+
+
+Processing SessionsController#get (for 127.0.0.1 at 2011-07-01 16:46:57) [GET]
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/sessions/get]
+
+
+Processing SessionsController#get (for 127.0.0.1 at 2011-07-01 16:46:57) [GET]
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/sessions/get]
+
+
+Processing SessionsController#reset (for 127.0.0.1 at 2011-07-01 16:47:22) [GET]
+
+NoMethodError (undefined method `reset' for {:aaa=>"bbb", :session_id=>"cdfbe54feaa369e5915e97b936cca4fd"}:ActionController::Session::AbstractStore::SessionHash):
+  app/controllers/sessions_controller.rb:13:in `reset'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (60.8ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#reset (for 127.0.0.1 at 2011-07-01 16:47:28) [GET]
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/sessions_controller.rb:13:in `delete'
+  app/controllers/sessions_controller.rb:13:in `reset'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (161.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#reset (for 127.0.0.1 at 2011-07-01 16:47:58) [GET]
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/sessions/reset]
+
+
+Processing SessionsController#getr (for 127.0.0.1 at 2011-07-01 16:48:01) [GET]
+
+ActionController::UnknownAction (No action responded to getr. Actions: get, reset, and set):
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/valery/.rvm/rubies/ruby-1.8.7-p330/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#get (for 127.0.0.1 at 2011-07-01 16:48:04) [GET]
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/sessions/get]
+
+
+Processing SessionsController#get (for 127.0.0.1 at 2011-07-01 16:48:05) [GET]
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/sessions/get]
+
+
+Processing SessionsController#get (for 127.0.0.1 at 2011-07-01 16:48:06) [GET]
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/sessions/get]
+
+
+Processing SessionsController#set (for 127.0.0.1 at 2011-07-01 16:48:08) [GET]
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/sessions/set]
+
+
+Processing SessionsController#get (for 127.0.0.1 at 2011-07-01 16:48:12) [GET]
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/sessions/get]
+
+
+Processing SessionsController#get (for 127.0.0.1 at 2011-07-01 16:48:13) [GET]
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/sessions/get]
+
+
+Processing SessionsController#get (for 127.0.0.1 at 2011-07-01 16:48:13) [GET]
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/sessions/get]
