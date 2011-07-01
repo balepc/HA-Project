@@ -1,5 +1,9 @@
 class LoadsController < ApplicationController
 
+  def quick
+    render :text => 'Quick'
+  end
+
   def load1
     sleep 1
   end
